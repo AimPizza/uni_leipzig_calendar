@@ -6,6 +6,11 @@ from bs4 import BeautifulSoup
 from dataclasses import dataclass
 from dateparser.date import DateDataParser
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
+
+_BERLIN_TZ = ZoneInfo("Europe/Berlin")
+"""Berlin timezone info for converting naive datetimes."""
+
 
 _DDP = DateDataParser(languages=["de", "en"])
 """Date parser with hard-coded locales."""
@@ -67,6 +72,7 @@ def _parse_full_date(date: str, time: str) -> datetime:
         minute=t.minute,
         second=0,
         microsecond=0,
+        tzinfo=_BERLIN_TZ,  # I don't expect the uni leipzig to move anytime soon
     )
 
 
