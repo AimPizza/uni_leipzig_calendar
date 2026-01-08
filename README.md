@@ -57,6 +57,7 @@ Als Einstieg ist unter [Perspektivisch](#perspektivisch) Verbesserungspotential 
 offene TODOs:
 
 - nach anderen Endpunkten suchen, die ggf. sofort gewünschte Anzahl oder gar gesamten Kalender bereitstellt
+- Docker Pipeline und Containerisierung (wichtig)
 
 ## Lizenz
 
