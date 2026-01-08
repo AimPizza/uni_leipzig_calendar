@@ -1,0 +1,33 @@
+[project]
+authors = [
+  { name = "MxMxffin" }, # forked from them
+  { name = "AimPizza" },
+]
+dependencies = [
+  "dotenv>=0.9.9,<0.10",
+  "flask>=3.1.2,<4",
+  "beautifulsoup4>=4.14.3,<5",
+  "apscheduler>=3.11.2,<4",
+  "requests>=2.32.5,<3",
+  "black>=25.12.0,<26",
+  "dateparser>=1.2.2,<2",
+  "ics>=0.7.2,<0.8",
+  "flask-caching>=2.3.1,<3",
+]
+name = "uni_leipzig_calendar"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+uni_leipzig_calendar = { path = ".", editable = true }
+
+[tool.pixi.dependencies]
+python = ">=3.11,<3.15"
+
+[tool.pixi.tasks]
+start = "python src/uni_leipzig_calendar/main.py"
+code = "code ."

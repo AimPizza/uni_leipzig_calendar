@@ -1,0 +1,17 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.pixi/envs/default/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src/uni_leipzig_calendar"
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "black-formatter.path": [
+        ".pixi/envs/default/bin/black"
+    ],
+}
