@@ -32,6 +32,16 @@ Die Konfiguration erfolgt über Umgebungsvariablen, die in einer .env-Datei bere
 
 ## Installation
 
+### Deployment mit Docker (compose)
+
+1. Klone das Repository: `git clone git@github.com:AimPizza/uni_leipzig_calendar.git`
+2. Erstelle eine .env-Datei und konfiguriere die erforderlichen Umgebungsvariablen.
+3. Passe die Datei `compose.yml` an
+4. Führe `docker compose up -d` aus
+5. Profit B)
+
+### Lokale Entwicklungsumgebung
+
 Um das Projekt lokal auszuführen, müssen Sie die folgenden Schritte ausführen:
 
 1. Klone das Repository: `git clone git@github.com:AimPizza/uni_leipzig_calendar.git`

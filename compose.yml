@@ -1,0 +1,8 @@
+services:
+  uni-leipzig-calendar:
+    image: ghcr.io/AimPizza/uni_leipzig_calendar:latest
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: unless-stopped
